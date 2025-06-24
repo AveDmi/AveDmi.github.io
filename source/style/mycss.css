@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css?family=Michroma&display=swap');
+
+body {
+    font-family: Michroma, serif;
+    background: linear-gradient(90deg, #000369 0%, #000000 100%);
+}
+
+p {
+    color: aquamarine;
+}
+
+.nav-items-center {
+    align-items: center;
+}
+
+nav.bg-body-dark {
+    background-color: rgb(19, 19, 19);
+}
+
+.nav-link {
+    color: aquamarine;
+}
+
+.navbar-nav .nav-link.active {
+    color: rgb(91, 91, 91);
+}
+
+.navbar-brand>img {
+    max-height: 2em;
+}
+
+.navbar-toggler {
+    background-color: rgb(91, 91, 91);
+}
+
+.side-bar {
+    color: aquamarine;
+    background: linear-gradient(270deg, #000369 0%, #000000 100%);
+}
+
+.card {
+    background: linear-gradient(270deg, #000369 0%, #000000 100%);
+    color: aquamarine;
+}
+
+.card a {
+    text-decoration: none;
+    color: aquamarine;
+}
+
+.slide-text,
+.footer-text {
+    margin: auto auto;
+    color: aquamarine;
+}
+
+.d-block {
+    background: linear-gradient(270deg, #000369 0%, #000000 60%);
+}
+
+footer,
+.btn-outline-primary {
+    background: linear-gradient(270deg, #000369 0%, #000000 60%);
+}
+
+.media-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.trigger-call {
+    animation: myAnim 2s ease 0s infinite normal forwards;
+}
+
+@media(max-width: 1000px) {
+    .right-side {
+        margin-top: 2rem;
+    }
+
+    .nav-items-center {
+        align-items: normal;
+    }
+}
+
+@media(max-width: 755px) {
+    .carousel-indicators {
+        display: none;
+    }
+}
+
+@keyframes myAnim {
+	0%,
+	100% {
+		transform: translateX(0);
+	}
+
+	10%,
+	30%,
+	50%,
+	70% {
+		transform: translateX(-10px);
+	}
+
+	20%,
+	40%,
+	60% {
+		transform: translateX(10px);
+	}
+
+	80% {
+		transform: translateX(8px);
+	}
+
+	90% {
+		transform: translateX(-8px);
+	}
+}
